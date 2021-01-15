@@ -1,5 +1,5 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+  import { tw } from 'twind'
 </script>
 
 <style>
@@ -16,12 +16,6 @@
 	}
 
 	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
 		margin: 0 0 1em 0;
 	}
 
@@ -43,8 +37,9 @@
 <h1>Great success!</h1>
 
 <figure>
-	<img alt="Success Kid" src="{successkid}">
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+
+<h1 class={tw`font-bold text(center 5xl white sm:gray-800 md:pink-700)`}>Using twind</h1>
